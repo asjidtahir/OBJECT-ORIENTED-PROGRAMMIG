@@ -1,0 +1,65 @@
+#include<iostream>
+using namespace std;
+class ajji
+{
+private:
+	int counter;
+public:
+	ajji() :counter(0)
+	{
+	}
+	void input()
+	{
+		cout << "The non-negative integer is :" << endl;
+		cin >> counter;
+	}
+	void increament()
+	{
+		cout << "The increament of the counter is :" << counter++<< endl;
+	}
+	void decreament()
+	{
+		if (counter >0)
+		{
+			cout << "The decreament of the counter is :" << counter-- << endl;
+
+		}
+		
+	}
+};
+int main()
+{
+	ajji foo;
+	foo.input();
+	//cout << "After increament";
+	foo.increament();
+	//cout<<"After decreament";
+	foo.decreament();
+	system("pause");
+	return 0;
+}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
