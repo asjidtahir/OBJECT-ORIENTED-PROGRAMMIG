@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int function(int *x,int *y,int *z)
+{
+	*z=*x+*y;
+	cout<<*z<<endl;
+}
+int main()
+{
+	int x=1,y=1,z=1;
+	function(&x,&y,&z);
+	system("pause");
+	return 0;
+}

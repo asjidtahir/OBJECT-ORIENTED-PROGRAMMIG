@@ -1,0 +1,25 @@
+#include<iostream>
+#include<string>
+using namespace std;
+struct ajji
+{
+	int age;
+	string name;
+	int salary;
+};
+int main()
+{
+	ajji a1;
+	cout << "Enter the name of a person :" << endl;
+	cin >> a1.name;
+	cout << "Enter the age of a person :" << endl;
+	cin >> a1.age;
+	cout << "Enter the salary of a person: " << endl;
+	cin >> a1.salary;
+	cout << "************************INFORMATION OF PERSON IS : *****************************:" << endl;
+	cout << "Name of a person :" << "  " << a1.name << endl;
+	cout << "Age of a person :" << "  " <<a1.age<< endl;
+	cout << "Salary of a person :" << "  " << a1.salary<<endl;
+	system("pause");
+	return 0;
+}

@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+class ajji
+{
+public:
+	string name;
+	int prize;
+public:
+	int type;
+};
+int main()
+{
+	ajji ajjiobj1;
+	ajjiobj1.name = "BMW" ;
+	ajjiobj1.prize = 13;
+	ajjiobj1.type = 1999;
+	cout << ajjiobj1.name << "  " << ajjiobj1.prize <<"  "<<ajjiobj1.type<< endl;
+	system("pause");
+	return 0;
+}
