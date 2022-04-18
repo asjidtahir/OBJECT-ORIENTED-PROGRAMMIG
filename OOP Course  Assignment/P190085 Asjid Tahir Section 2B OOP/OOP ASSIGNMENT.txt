@@ -1,0 +1,21 @@
+
+                         NAME: ASJID TAHIR
+                         CLASS:BSCS 2B
+                         ROLL NO:19p0085
+
+ANSWERS:
+ 
+Ans no 1: The Base Class of the Heavy Vehicle is "Vehicle" and derived class is "Bus".
+
+ 
+Ansno 2 :  The passenger member of Vehicle class and load member of Heavy vehicle class are accessible by displaydata()
+functions   because they  are Protected members  and the other members of these classes are not accessible because they 
+are named as private member(i.e private members are not accesible).
+
+
+Ans no 3 :  The passenger members of Vehicle and the load member of Heavy vehicle class are accessible by object of Bus
+ class as they both are Protected members other members of these classes are not accessible as they are private 
+members.
+
+
+Ansno 4 : Yes,   the outputdata()  is accessible to the objects of Heavyvehicle class.
