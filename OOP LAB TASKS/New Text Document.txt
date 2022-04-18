@@ -1,0 +1,93 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class counterClass
+{
+	int counter;
+
+public:
+	counterClass()
+	{
+		counter = 0;
+	}
+	void setcounter(int count)
+	{
+		counter = count;
+	}
+	int getcounter()
+	{
+		return counter;
+
+	}
+
+	void increment()
+	{
+		counter++;
+
+		}
+	void decrement()
+	{
+		--counter;
+	}
+	
+};
+
+int main()
+{
+	counterClass A;
+
+	cout << " initial value of pointer is : " << A.getcounter()<<endl;
+
+	int x;
+	char a, y,z;
+	cout << " Enter Integer";
+	cin >> x;
+	A.setcounter(x);
+	do
+	{
+		if (x > 0)
+		{
+
+			cout << " Do you want to Increment ? ";
+			cin >> a;
+			if (a == 'y')
+			{
+				
+				A.increment();
+				cout<<A.getcounter()<<endl;
+				
+				
+			}
+			if (a == 'n')
+			{
+				cout << " Moving on" << endl;
+			}
+			cout << " Do you want to Decrement ? ";
+			cin >> z;
+			if (z == 'y')
+			{
+				
+				A.decrement();
+				cout <<A.getcounter()<<endl;
+				
+
+			}
+			if (z == 'n')
+			{
+				cout << "moving on " << endl;
+			}
+
+		}
+		else
+		{
+			cout << " Invalid" << endl;
+		}
+		cout << " Do you Want to Run again ?";
+		cin >> y;
+
+
+	} while (y != 'n');
+
+	system("pause");
+	return 0;
+}

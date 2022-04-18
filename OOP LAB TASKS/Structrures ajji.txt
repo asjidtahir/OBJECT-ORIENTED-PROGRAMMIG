@@ -1,0 +1,43 @@
+#include<iostream>
+#include<string>
+using namespace std;
+struct ajji
+{
+	int age;
+	string name;
+	int salary;
+};
+struct foo
+{
+	string nickname;
+	int futuresalary;
+	int wife;
+};
+int main()
+{
+	ajji a1;
+	cout << "Enter the name of a person :" << endl;
+	cin >> a1.name;
+	cout << "Enter the age of a person :" << endl;
+	cin >> a1.age;
+	cout << "Enter the salary of a person: " << endl;
+	cin >> a1.salary;
+	cout << "************************INFORMATION OF PERSON IS : *****************************:" << endl;
+	cout << "Name of a person :" << "  " << a1.name << endl;
+	cout << "Age of a person :" << "  " <<a1.age<< endl;
+	cout << "Salary of a person :" << "  " << a1.salary<<endl;
+	cout << endl<<endl;
+	foo f1;
+	cout << "Enter the nickname of a person is :" << endl;
+	cin >> f1.nickname;
+	cout << "Enter the future salary of a person is :" << endl;
+	cin >> f1.futuresalary;
+	cout << "Enter the number of wifes :" << endl;
+	cin >> f1.wife;
+	cout << "__________________________BIO DATA OF A PERSON :_________________________________:" << endl;
+	cout << "The nickname of a person is :" << f1.nickname << endl;
+	cout << "Future salary of a person is :" << f1.futuresalary << endl;
+	cout << "Wife is :" << f1.wife << endl;
+	system("pause");
+	return 0;
+}
